@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stake Mine Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stake Mine Predictor</h1>
+        
+        <label>Server Seed:</label>
+        <input type="text" id="server-seed" placeholder="Enter server seed">
+
+        <label>Client Seed:</label>
+        <input type="text" id="client-seed" placeholder="Enter client seed">
+
+        <label>Number of Mines (1-24):</label>
+        <input type="number" id="mine-count" min="1" max="24">
+
+        <button onclick="predictMines()">Predict Mines</button>
+
+        <h2>Mine Positions:</h2>
+        <div id="mine-grid"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
